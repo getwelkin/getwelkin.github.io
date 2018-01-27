@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:rgb(50,50,50);
+    overflow-y: hidden;
+}
+
+h1{
+    font-size:50px;
+    color:#fff;
+    font-family: "SF Pro Display",sans-serif;
+    font-weight:500;
+}
+
+.t-font--accent{
+    color:#a17dea;
+}
+
+.l-header{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin:5vh 0;
+}
+
+.l-section--heading-font{
+    text-align: center;
+    margin:15vh 0;
+}
+
+.l-section--welkin{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-img--tool-loading{
+    box-shadow:0 0 40px 0 rgba(0, 0, 0, .1);
+}
+
+.c-img--tool-loading-logo{
+    width:60px;
+    height:60px;
+    position: absolute;
+
+}
