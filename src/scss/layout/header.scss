@@ -1,0 +1,31 @@
+.l-header {
+    position: fixed;
+    width: 100%;
+    padding: $spacing*3 $spacing*2 $spacing;
+    display: flex;
+    align-items: center;
+    -webkit-app-region: drag;
+    z-index: 100;
+    border-right: 6px solid transparent; // scroll bar width
+
+    &__background {
+        background-color: $color-gray-3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: .9;
+    }
+
+    &__icon {
+        height: $spacing*2.5;
+    }
+
+    &__title {
+        font-size: $font-size-huge;
+        font-weight: 600;
+        padding-left: $spacing;
+    }
+}

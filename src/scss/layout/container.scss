@@ -1,0 +1,41 @@
+.l-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 130px $spacing*2 0 $spacing*2;
+    z-index: 0;
+    overflow-y: scroll;
+
+    &__inner {
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+    &--pip {
+        .video-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            &:before {
+                -webkit-app-region: drag;
+                content: '';
+                position: absolute;
+                top: 0;
+                height: calc(100% - 100px);
+                width: 100%;
+                cursor: move;
+                z-index: 1;
+            }
+            .vjs-welkin-pip svg {
+                transform: rotate(230deg) scaleX(-1) scale(1.6);
+            }
+
+            // disable fullscreen on pip mode
+            .vjs-fullscreen-control.vjs-control.vjs-button {
+                display: none;
+            }
+        }
+    }
+}

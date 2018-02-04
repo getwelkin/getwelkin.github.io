@@ -1,8 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    overflow-y: hidden;
-}
+@import "_variables";
+@import "layout/body";
+@import "layout/container";
+@import "layout/header";
+@import "layout/navigation";
 
 html {
     overflow: hidden;

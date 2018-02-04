@@ -1,0 +1,60 @@
+.l-navigation {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: $font-size-tiny;
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        position: relative;
+        display: inline-block;
+        margin-right: 25px;
+        cursor: default;
+        &--inactive {
+            color: $color-gray-2;
+        }
+        &--clickable {
+            cursor: pointer;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+            &:after {
+                display: none;
+            }
+        }
+        &:after {
+            content: '';
+            width: 1px;
+            height: calc(100% - 3px);
+            background-color: $color-gray-2;
+            position: absolute;
+            margin-top: 2px;
+            margin-right: -13px;
+            top: 0;
+            right: 0;
+        }
+    }
+    &__arrows {
+        display: flex;
+        align-items: center;
+        padding-left: $spacing;
+    }
+    &__arrow {
+        fill: #fff;
+        height: $spacing * 2.25;
+        width: $spacing * 1.25;
+        &--inactive {
+            fill: $color-gray-2;
+        }
+    }
+}
