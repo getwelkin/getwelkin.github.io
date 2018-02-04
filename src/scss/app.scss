@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(50, 50, 50);
+    overflow-y: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fff;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 500;
+}
+
+.t-font--accent {
+    color: #a17dea;
+}
+
+.l-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0;
+}
+
+.l-header__divider {
+
+}
+
+.l-section--heading-font {
+    text-align: center;
+    margin: 15vh 30px;
+}
+
+.l-section--welkin {
+    margin: 15vh 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-img--tool-loading {
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .1);
+    width: 50%;
+}
+
+.c-img--tool-loading-logo {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+@media (max-width: 1200px) {
+    .c-img--tool-loading {
+        width: 90%;
+    }
+
+    .c-img--tool-loading-logo {
+        width: 7%;
+        height: auto;
+        position: absolute;
+    }
+}

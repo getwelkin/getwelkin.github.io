@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113131455-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-113131455-1');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="welkin brings the new watching experience straight to you and your devices.">
 
     <title>welkin - Coming soon</title>
+
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="/dist/videojs-resolution-switcher.css">
+    <link rel="icon" type="image/png" href="/img/welkin-logo.png" sizes="any">
+
     <script type="text/javascript">
         // redirect to the https version
         if (window.location.protocol === 'http:') {
             window.location.href = window.location.href.replace('http:', 'https:');
         }
     </script>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="/img/welkin-logo.png" sizes="any">
 </head>
 <body>
     <header class="l-header">
@@ -37,5 +31,14 @@
             <img class="c-img--tool-loading-logo" alt="Logo" src="/img/welkin-logo.png">
         </section>
     </main>
+
+    <script src="/dist/video.js"></script>
+    <script src="/dist/videojs-contrib-hls.js"></script>
+    <script src="/dist/videojs-resolution-switcher.js"></script>
+    <script src="/dist/videojs-playlist.js"></script>
+    <script src="/dist/videojs-contrib-hls.js"></script>
+
+    <script src="/dist/vue.js"></script>
+    <script src="/dist/vue-router.js"></script>
 </body>
 </html>

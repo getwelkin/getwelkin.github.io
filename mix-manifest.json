@@ -1,0 +1,10 @@
+{
+    "/dist/app.css": "/dist/app.css",
+    "/dist/video.js": "/dist/video.js",
+    "/dist/videojs-contrib-hls.js": "/dist/videojs-contrib-hls.js",
+    "/dist/videojs-resolution-switcher.js": "/dist/videojs-resolution-switcher.js",
+    "/dist/videojs-playlist.js": "/dist/videojs-playlist.js",
+    "/dist/vue.js": "/dist/vue.js",
+    "/dist/vue-router.js": "/dist/vue-router.js",
+    "/dist/videojs-resolution-switcher.css": "/dist/videojs-resolution-switcher.css"
+}
