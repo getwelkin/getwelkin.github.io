@@ -79,11 +79,12 @@ module.exports = __webpack_require__(4);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_index__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_player__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_player___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__pages_player__);
 
 
 
-var routes = [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_0__pages_index__["a" /* default */] }, { path: '/broadcasters/:slug', component: __WEBPACK_IMPORTED_MODULE_1__pages_player___default.a }];
+var routes = [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_0__pages_index__["a" /* default */] }, { path: '/broadcasters/:slug', component: __WEBPACK_IMPORTED_MODULE_1__pages_player__["a" /* default */] }];
+
+var router = new VueRouter({ routes: routes });
 
 var app = new Vue({
     el: '#app',
@@ -115,9 +116,14 @@ var page = {
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+var page = {
+    template: "\n         <h1>Player</h1>\n    "
+};
 
+/* harmony default export */ __webpack_exports__["a"] = (page);
 
 /***/ }),
 /* 4 */
