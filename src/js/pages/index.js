@@ -5,8 +5,8 @@ const page = {
             <h1>The new <span class="t-font--accent">watching</span> experience.</h1>
         </section>
         <section class="l-section--welkin">
-            <img class="c-img--tool-loading" alt="Coming soon" src="/img/welkin-spinner.svg">
-            <img class="c-img--tool-loading-logo" alt="Logo" src="/img/welkin-logo.png">
+            <img class="c-img--tool-loading" alt="Coming soon" src="/src/images/welkin-spinner.svg">
+            <img class="c-img--tool-loading-logo" alt="Logo" src="/src/images/welkin-logo.png">
         </section>
     </main>
     `

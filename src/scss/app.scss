@@ -3,14 +3,10 @@
 @import "layout/container";
 @import "layout/header";
 @import "layout/navigation";
-
-html {
-    overflow: hidden;
-}
+@import "loading-pulser";
 
 body {
     background-color: rgb(50, 50, 50);
-    overflow-y: hidden;
 }
 
 h1 {
@@ -22,17 +18,6 @@ h1 {
 
 .t-font--accent {
     color: #a17dea;
-}
-
-.l-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 5vh 0;
-}
-
-.l-header__divider {
-
 }
 
 .l-section--heading-font {

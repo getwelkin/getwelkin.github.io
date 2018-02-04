@@ -40,15 +40,12 @@ a:hover * {
 }
 
 .l-container {
-  width: 100vw;
   height: 100vh;
   padding: 130px 40px 0 40px;
   z-index: 0;
-  overflow-y: scroll;
 }
 
 .l-container__inner {
-  max-width: 620px;
   margin: 0 auto;
 }
 
@@ -83,6 +80,9 @@ a:hover * {
 
 .l-header {
   position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 60px 40px 20px;
   display: -webkit-box;
@@ -205,13 +205,116 @@ a:hover * {
   fill: #5e5e5e;
 }
 
-html {
-  overflow: hidden;
+.loading-pulser {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.loading-pulser--hidden {
+  z-index: -1;
+  display: none;
+}
+
+.loading-pulser--hidden-opacity {
+  opacity: 0;
+}
+
+.loading-pulser__wrapper {
+  height: 100%;
+  width: 100%;
+  max-height: 600px;
+  max-width: 600px;
+  position: relative;
+}
+
+.loading-pulser__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: pulsate 2s ease-out;
+          animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.loading-pulser__outer-circle {
+  -webkit-animation-delay: .75s;
+          animation-delay: .75s;
+}
+
+.loading-pulser__middle-circle {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.loading-pulser__inner-circle {
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+.loading-pulser__logo {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 
 body {
   background-color: #323232;
-  overflow-y: hidden;
 }
 
 h1 {
@@ -223,17 +326,6 @@ h1 {
 
 .t-font--accent {
   color: #a17dea;
-}
-
-.l-header {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 5vh 0;
 }
 
 .l-section--heading-font {

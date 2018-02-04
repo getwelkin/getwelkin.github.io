@@ -1,12 +1,13 @@
 import indexPage from './pages/index';
 import playerPage from './pages/player';
+import loadingPulser from './components/loading-pulser';
 
 const routes = [
     {path: '/', component: indexPage},
-    {path: '/broadcasters/:slug', component: playerPage}
+    {path: '/v/:id', component: playerPage}
 ];
 
-const router = new VueRouter({routes});
+const router = new VueRouter({routes,  mode: 'history'});
 
 const app = new Vue({
     el: '#app',

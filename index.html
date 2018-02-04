@@ -9,19 +9,21 @@
 
     <link rel="stylesheet" href="/dist/app.css">
     <link rel="stylesheet" href="/dist/videojs-resolution-switcher.css">
-    <link rel="icon" type="image/png" href="/img/welkin-logo.png" sizes="any">
+    <link rel="icon" type="image/png" href="/src/images/welkin-logo.png" sizes="any">
 
     <script type="text/javascript">
         // redirect to the https version
-        if (window.location.protocol === 'http:') {
-            window.location.href = window.location.href.replace('http:', 'https:');
+        if (location.hostname !== "localhost") {
+            if (window.location.protocol === 'http:') {
+                window.location.href = window.location.href.replace('http:', 'https:');
+            }
         }
     </script>
 </head>
-<body>
+<body class="l-body">
     <div id="app">
         <header class="l-header">
-            <img class="l-header__logo" alt="Logo" src="/img/logo-font-white.svg">
+            <img class="l-header__logo" alt="Logo" src="/src/images/logo-font-white.svg">
         </header>
         <loading-pulser :show="showPulser"></loading-pulser>
         <div class="l-container">

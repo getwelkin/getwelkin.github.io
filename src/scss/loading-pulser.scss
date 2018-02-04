@@ -1,0 +1,67 @@
+.loading-pulser {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity .5s;
+
+    &--hidden {
+        z-index: -1;
+        display: none;
+
+        &-opacity {
+            opacity: 0;
+        }
+    }
+
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+        max-height: 600px;
+        max-width: 600px;
+        position: relative;
+    }
+
+    &__element {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        animation: pulsate 2s ease-out;
+        animation-iteration-count: infinite;
+        transform: scale(.8);
+    }
+
+    &__outer-circle {
+        animation-delay: .75s;
+    }
+    &__middle-circle {
+        animation-delay: .5s;
+    }
+    &__inner-circle {
+        animation-delay: .25s;
+    }
+    &__logo {
+        animation-delay: 0s;
+    }
+
+
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.8);
+    }
+}
