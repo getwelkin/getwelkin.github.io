@@ -14,6 +14,9 @@ let mix = require('laravel-mix');
 // CSS
 mix.sass('src/scss/app.scss', 'dist');
 
+// JS
+mix.js('src/js/index.js', 'dist');
+
 // JavaScript node_modules
 mix.copy('node_modules/video.js/dist/video.js', 'dist')
     .copy('node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.js', 'dist')

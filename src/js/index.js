@@ -1,5 +1,5 @@
 import indexPage from './pages/index';
-import playerPage from './page/player';
+import playerPage from './pages/player';
 
 const routes = [
     {path: '/', component: indexPage},
