@@ -1,0 +1,97 @@
+.vjs-skin-welkin {
+    .vjs-control-bar {
+        background-color: transparent;
+    }
+    .vjs-progress-control {
+        &:hover {
+            .vjs-slider-bar:before {
+                height: 14px;
+                right: -8px;
+                top: -5px;
+                width: 14px;
+            }
+        }
+    }
+    .vjs-progress-holder {
+        .vjs-load-progress {
+            opacity: 0.5;
+            border-radius: 5px;
+            background-color: #fff;
+            div {
+                display: none;
+            }
+        }
+        &.vjs-slider.vjs-slider-horizontal {
+            height: 6px;
+            margin: 0;
+            border-radius: 5px;
+        }
+    }
+    .vjs-slider-bar {
+        border-radius: 5px;
+        background-color: #a17dea;
+        &:before {
+            background-color: #a17dea;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
+            content: '';
+            height: 11px;
+            width: 11px;
+            border-radius: 20px;
+            right: -6px;
+            top: -3px;
+        }
+    }
+
+    .vjs-volume-menu-button {
+        order: 1;
+        .vjs-menu {
+            .vjs-menu-content {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .vjs-volume-bar.vjs-slider-vertical {
+        width: 6px;
+        background-color: rgba(255, 255, 255, 1);
+        .vjs-volume-level {
+            width: 100%;
+            border-radius: 5px;
+            background-color: #a17dea;
+            &:before {
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
+                width: 12px;
+                height: 12px;
+                content: '';
+                background-color: #fff;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .vjs-button {
+        z-index: 1;
+    }
+
+    .vjs-welkin-pip {
+        transition: all .5s;
+        cursor: pointer;
+        * {
+            cursor: pointer;
+        }
+        svg {
+            transform: rotate(47deg) scaleX(-1) scale(1.6);
+            z-index: 0;
+            filter: drop-shadow( 0px 0px 5px rgba(255,255,255,0) );
+        }
+        &:hover svg {
+            filter: drop-shadow( 0px 0px 5px rgba(255,255,255,1) );
+        }
+    }
+    &.vjs-fullscreen {
+        .vjs-welkin-pip {
+            display: none;
+        }
+    }
+}
+

@@ -38,7 +38,7 @@ const component = {
                     <circle opacity="0.5" fill="url(#color-light-to-dark-3)" cx="297.397" cy="301.932" r="122.943"/>
                 </svg>
                 <svg class="loading-pulser__element loading-pulser__logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="600px" height="600px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
-                    <image overflow="visible" width="1000" height="1000" xlink:href="src/images/logo/welkin-logo.png"  transform="matrix(0.096 0 0 0.096 251.3911 253.5962)"></image>
+                    <image overflow="visible" width="1000" height="1000" xlink:href="/src/images/logo/welkin-logo.png"  transform="matrix(0.096 0 0 0.096 251.3911 253.5962)"></image>
                 </svg>
             </div>
         </div>

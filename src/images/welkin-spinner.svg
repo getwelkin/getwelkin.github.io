@@ -661,6 +661,6 @@
 	</linearGradient>
 	<circle opacity="0.5" fill="url(#SVGID_3_)" enable-background="new    " cx="398.366" cy="300.734" r="69.987"/>
 </g>
-<image overflow="visible" width="1000" height="1000" xlink:href="welkin-logo.png"  transform="matrix(0.0701 0 0 0.0701 365.1875 265.7119)">
+<image overflow="visible" width="1000" height="1000" xlink:href="/src/images/welkin-logo.png"  transform="matrix(0.0701 0 0 0.0701 365.1875 265.7119)">
 </image>
 </svg>

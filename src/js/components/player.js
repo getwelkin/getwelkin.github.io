@@ -2,7 +2,6 @@ const component = {
     props: ['streams', 'currentPlaylistIndex'],
     template: `
         <div ref="container">
-        
         </div>
     `,
     data() {
@@ -12,8 +11,12 @@ const component = {
             hasPipComponentRegistered: false,
         };
     },
+    mounted() {
+        this.init(this.streams);
+    },
     watch: {
         'streams': function (streams) {
+            debugger;
             this.init(streams);
         },
         'currentPlaylistIndex': function (currentPlaylistItem) {
@@ -22,6 +25,7 @@ const component = {
     },
     methods: {
         mounted() {
+            debugger;
             this.init(this.streams);
         },
         init(streams) {
@@ -40,9 +44,9 @@ const component = {
             this.$refs.container.innerHTML = `<video id="player" ref="player" class="video-js vjs-default-skin vjs-skin-welkin" controls></video>`;
             const $player = document.querySelector('#player');
             this.player = this.initPlayer($player);
-            this.registerPipComponent();
+            //this.registerPipComponent();
+            //this.player.getChild('controlBar').addChild('pip-button', {});
             this.attachPlaylist(streams);
-            this.player.getChild('controlBar').addChild('pip-button', {});
             this.bindEvents();
             this.player.videoJsResolutionSwitcher();
             this.player.play();

@@ -21,6 +21,12 @@ const app = new Vue({
     },
     mounted() {
         this.initialized = true;
+        this.$root.$on('show-pulser', () => {
+            this.showPulser = true;
+        });
+        this.$root.$on('hide-pulser', () => {
+            this.showPulser = false;
+        });
     },
     methods: {
     }

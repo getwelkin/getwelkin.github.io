@@ -7,8 +7,8 @@
 
     <title>welkin - Coming soon</title>
 
-    <link rel="stylesheet" href="/dist/app.css">
     <link rel="stylesheet" href="/dist/videojs-resolution-switcher.css">
+    <link rel="stylesheet" href="/dist/app.css">
     <link rel="icon" type="image/png" href="/src/images/welkin-logo.png" sizes="any">
 
     <script type="text/javascript">
@@ -23,6 +23,7 @@
 <body class="l-body">
     <div id="app">
         <header class="l-header">
+            <div class="l-header__background"></div>
             <img class="l-header__logo" alt="Logo" src="/src/images/logo-font-white.svg">
         </header>
         <loading-pulser :show="showPulser"></loading-pulser>
@@ -43,6 +44,7 @@
 
     <script src="/dist/vue.js"></script>
     <script src="/dist/vue-router.js"></script>
-    <script src="/dist/index.js?0001"></script>
+    <script src="/dist/moment.js"></script>
+    <script src="/dist/index.js"></script>
 </body>
 </html>

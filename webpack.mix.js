@@ -11,6 +11,8 @@ let mix = require('laravel-mix');
  |
  */
 
+mix.options({processCssUrls: false});
+
 // CSS
 mix.sass('src/scss/app.scss', 'dist');
 
@@ -24,7 +26,8 @@ mix.copy('node_modules/video.js/dist/video.js', 'dist')
     .copy('node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.js', 'dist')
     .copy('node_modules/videojs-playlist/dist/videojs-playlist.js', 'dist')
     .copy('node_modules/vue/dist/vue.js', 'dist')
-    .copy('node_modules/vue-router/dist/vue-router.js', 'dist');
+    .copy('node_modules/vue-router/dist/vue-router.js', 'dist')
+    .copy('node_modules/moment/moment.js', 'dist');
 
 // CSS node_modules
 mix.copy('node_modules/videojs-resolution-switcher/lib/videojs-resolution-switcher.css', 'dist');

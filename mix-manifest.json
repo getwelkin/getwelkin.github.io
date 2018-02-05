@@ -7,5 +7,6 @@
     "/dist/videojs-playlist.js": "/dist/videojs-playlist.js",
     "/dist/vue.js": "/dist/vue.js",
     "/dist/vue-router.js": "/dist/vue-router.js",
+    "/dist/moment.js": "/dist/moment.js",
     "/dist/videojs-resolution-switcher.css": "/dist/videojs-resolution-switcher.css"
 }

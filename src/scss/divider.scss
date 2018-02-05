@@ -1,0 +1,24 @@
+$divider-height: 2px;
+
+.divider {
+    position: relative;
+    height: $divider-height;
+    margin: $spacing*2 0;
+    text-align: center;
+    &:before {
+        content: '';
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        background-color: $color-gray-2;
+        left: 0;
+    }
+    &:after {
+        content: attr(data-text);
+        display: inline-block;
+        margin-top: - #{$spacing/2 + $divider-height/2};
+        padding: 0 $spacing*2;
+        background-color: $color-gray-3;
+        position: relative;
+    }
+}
